@@ -1,1 +1,0 @@
-# TrainingProject_DA_TeamOseti
