@@ -5,7 +5,21 @@ import CsvAnalyze
 # データ取得のサンプル
 data = CsvAnalyze.AllBooks("comments")
 # print(data["opus"])
-# print("=======")
+
+myTitle = []
+for i in data["opus"]:
+  myTitle.append(i)
+  # print(i)
+# print("-----------------------------")
+
+myTitle = list(set(myTitle))
+
+print(len(myTitle))
+
+print("=======================")
+for title in myTitle:
+  print(title)
+
 
 # ソートのサンプル
 # res1 = CsvAnalyze.CsvSort(data, "opus", True)
@@ -19,8 +33,14 @@ data = CsvAnalyze.AllBooks("comments")
 
 
 #全ファイルと欲しいタイトルを渡すとコメントが一気にもらえるもの
-res3 = CsvAnalyze.OutCommnet(data, "黒子のバスケ Replace PLUS")
+# res3 = CsvAnalyze.OutCommnet(data, "黒子のバスケ Replace PLUS")
 
-print("黒子のバスケ Replace PLUS")
-for tes in res3:
-  print(tes)
+# print("黒子のバスケ Replace PLUS")
+# for i in CsvAnalyze.OutCommnet(data, "黒子のバスケ Replace PLUS"):
+#   print(i)
+
+# print("-------------------------")
+
+# print("PSYREN―サイレン―")
+# for i in CsvAnalyze.OutCommnet(data, "PSYREN―サイレン―"):
+#   print(i)
