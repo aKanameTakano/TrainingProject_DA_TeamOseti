@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- Coding: utf-8 -*-
 import CsvAnalyze
-import MeCab
 
 # データ取得のサンプル
 data = CsvAnalyze.AllBooks("comments")
